@@ -1,0 +1,213 @@
+/* 基础样式 */
+#music-controller {
+    position: fixed;
+    bottom: 65px;
+    right: 14px;
+    width: 300px;
+    padding: 20px;
+    background: rgb(204, 22, 22);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, width 0.3s, height 0.3s, padding 0.3s;
+    z-index: 1000;
+}
+
+/* 折叠后的迷你播放器样式 */
+#music-controller.collapsed {
+    width: 75px;
+    height: 60px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* 隐藏标题和控制器 */
+#music-controller.collapsed h3,
+#music-controller.collapsed #controls {
+    display: none;
+}
+
+/* 音乐图标显示 */
+#music-controller.collapsed #mini-icon {
+    display: block;
+    font-size: 24px;
+}
+
+#mini-icon {
+    display: none;
+    color: #333;
+}
+
+/* 控制按钮样式 */
+#controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* 音量调节 */
+#volume-slider {
+    width: 100%;
+}
+
+/* 折叠和展开按钮 */
+#toggle-button {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* 媒体查询 - 特大屏幕 */
+@media (min-width: 1440px) {
+    #music-controller {
+        width: 400px;
+        padding: 25px;
+    }
+
+    #controls {
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    #volume-slider {
+        width: 90%;
+    }
+
+    #toggle-button {
+        font-size: 20px;
+    }
+}
+
+/* 媒体查询 - 大屏幕 */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    #music-controller {
+        width: 350px;
+        padding: 20px;
+    }
+
+    #controls {
+        gap: 12px;
+        margin-top: 12px;
+    }
+
+    #volume-slider {
+        width: 85%;
+    }
+
+    #toggle-button {
+        font-size: 18px;
+    }
+}
+
+/* 媒体查询 - 平板设备（横屏） */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+    #music-controller {
+        width: 350px;
+        padding: 20px;
+    }
+
+    #controls {
+        gap: 12px;
+        margin-top: 12px;
+    }
+
+    #volume-slider {
+        width: 85%;
+    }
+
+    #toggle-button {
+        font-size: 18px;
+    }
+}
+
+/* 媒体查询 - 平板设备（竖屏） */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    #music-controller {
+        width: 300px;
+        padding: 15px;
+    }
+
+    #controls {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    #volume-slider {
+        width: 80%;
+    }
+
+    #toggle-button {
+        font-size: 16px;
+    }
+}
+
+/* 媒体查询 - 中屏幕 */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #music-controller {
+        width: 300px;
+        padding: 15px;
+    }
+
+    #controls {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    #volume-slider {
+        width: 80%;
+    }
+
+    #toggle-button {
+        font-size: 16px;
+    }
+}
+
+/* 媒体查询 - 小屏幕 */
+@media (min-width: 480px) and (max-width: 767px) {
+    #music-controller {
+        width: 250px;
+        padding: 12px;
+    }
+
+    #controls {
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    #volume-slider {
+        width: 75%;
+    }
+
+    #toggle-button {
+        font-size: 14px;
+    }
+}
+
+/* 媒体查询 - 超小屏幕 */
+@media (max-width: 479px) {
+    #music-controller {
+        width: 200px;
+        padding: 10px;
+    }
+
+    #controls {
+        gap: 6px;
+        margin-top: 6px;
+    }
+
+    #volume-slider {
+        width: 70%;
+    }
+
+    #toggle-button {
+        font-size: 12px;
+    }
+}
