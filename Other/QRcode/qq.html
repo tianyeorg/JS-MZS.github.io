@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+    <style>
+        /* 让图片在父容器内响应式显示并居中 */
+        .responsive-image {
+            width: 100%;          /* 让图片宽度为100% */
+            height: auto;         /* 高度自动 */
+            max-width: 600px;     /* 设置最大宽度 */
+            display: block;       /* 使图片以块级元素方式显示 */
+            margin: 0 auto;       /* 水平居中显示 */
+        }
+
+        /* 可选：为 body 添加一些样式，使页面看起来更好 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<img src="qq.jpg" alt="Responsive Image" class="responsive-image">
+
+</body>
+</html>

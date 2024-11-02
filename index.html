@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>进山中学·模拟政治协商社团</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/music.css">
+  
+  <!--其他标志库-->
+  <link href="https://cdn.bootcss.com/font-awesome/6.6.0/css/all.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <!-- 音乐播放器控件 -->
+  <div id="music-controller">
+    <span id="mini-icon">🎵</span>
+    <button id="toggle-button">×</button>
+    <h3 id="status-text">🎶 正在播放音乐</h3>
+    <audio id="audio" src="assets/music/a.mp3" loop></audio>
+    <div id="controls">
+        <button id="play-pause">▶️</button>
+        <input id="volume-slider" type="range" min="0" max="1" step="0.1" value="0.5">
+    </div>
+  </div>
+
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:3520645758@qq.com">3520645758@qq.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+86 18335126202</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="./Other/QRcode/qq.html" class="qq" target="_blank"><i class="bi bi-tencent-qq"></i></a>
+          <a href="./Other/QRcode/wechat.html" class="wechat" target="_blank"><i class="bi bi-chat-dots"></i></a>
+          <a href="https://revival-society.github.io/JZMZS_WIKI.github.io/" class="wiki" target="_blank"><i class="bi bi-wikipedia"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">模拟政治协商</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">主页</a></li>
+            <li><a href="#about">简介</a></li>
+            <li><a href="#services">具体了解</a></li>
+            <li><a href="#portfolio">展示</a></li>
+            <li><a href="#team">上朝</a></li>
+            <!--<li class="dropdown"><a href="#"><span>其他</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>-->
+            <li><a href="#contact">加入我们</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-start">
+          <div class="col-lg-8">
+            <h2>★欢迎来到模拟政治协商社团★</h2>
+            <p>坚持党的领导🚩永远跟党走🔺社团不是🙅脱缰的野马🐎</p>
+            <a href="#contact" class="btn-get-started">加入我们</a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Deep dark hole<br></span>
+        <h2>深入♂了解<br></h2>
+        <p>社团致力于成员间的蕉流与合作，共同探讨各种议题🗡。</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>天啊！那是相似的！</h3>
+            <p class="fst-italic">
+              专业的！正规的！有趣的！
+            </p>
+            <ul>
+              <li><i class="bi bi-stars"></i> <span>👍自由 平等 文明 和谐👍</span></li>
+              <li><i class="bi bi-stars"></i> <span>🤵真正的模拟！🤵</span></li>
+              <li><i class="bi bi-stars"></i> <span>🤵‍♀️真正的协商！🤵‍♀️</span></li>
+            </ul>
+            <a href="#contact" class="read-more"><span>点击参加！</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Cards Section -->
+    <section id="cards" class="cards section">
+
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="100">
+            <span>01</span>
+            <h4>报名社团吧</h4>
+            <p>只要你的成分正确就可以加入咧！</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="200">
+            <span>02</span>
+            <h4>创建组别吧</h4>
+            <p>创建你的组别，表明你的组立场，拉拢你的组员！</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="300">
+            <span>03</span>
+            <h4> 丰富组别吧</h4>
+            <p>你需要设计师来设计你的组徽，组旗，虚拟形象等等！</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
+            <span>04</span>
+            <h4>筹备议题吧</h4>
+            <p>投降？投降！投降？！</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
+            <span>05</span>
+            <h4>尽情表演吧</h4>
+            <p>炸弹！反转卡！</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="600">
+            <span>06</span>
+            <h4>征服大海吧！</h4>
+            <p>俺は海贼王になる男だ！</p>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Cards Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div> 
+            <!--<div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>-->
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <!--<div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>-->
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>进入阿兹卡班</span>
+        <h2>KNOW MORE🤯</h2>
+        <p>有关于社团的更多信息！！</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-wikipedia"></i>
+              </div>
+              <a href="https://revival-society.github.io/JZMZS_WIKI.github.io/" target="_blank" class="stretched-link">
+                <h3>WIKI</h3>
+              </a>
+              <p>社团的发展、活动、插图等等.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!--<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Eosle Commodi</h3>
+              </a>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+            </div>
+          </div>--><!-- End Service Item -->
+
+          <!--<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Ledo Markt</h3>
+              </a>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+            </div>
+          </div>--><!-- End Service Item -->
+
+          <!--<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Asperiores Commodit</h3>
+              </a>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>--><!-- End Service Item -->
+
+          <!--<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Velit Doloremque</h3>
+              </a>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>--><!-- End Service Item -->
+
+          <!--<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Dolori Architecto</h3>
+              </a>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>--><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>💞别等了💞</h3>
+              <p>你究竟在等什么！百利而无一害！快来啊！！！</p>
+              <a class="cta-btn" href="#contact">点击上船</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>卢浮宫</span>
+        <h2>图片展示</h2>
+        <p>豪堪！👍</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">全部</li>
+            <li data-filter=".filter-club">社团</li>
+            <li data-filter=".filter-team">小组</li>
+            <li data-filter=".filter-event">活动展示</li>
+            <li data-filter=".filter-school">学校</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-club">
+              <img src="assets/img/exhibition/Club/logo/Club-logo.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>社团标志</h4>
+                <p>Heaven-Studio创建</p>
+                <a href="assets/img/exhibition/Club/logo/Club-logo.png" title="社团标志" data-gallery="portfolio-gallery-club" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+               <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-school">
+              <img src="assets/img/exhibition/School/logo.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>校徽</h4>
+                <!--<p></p>-->
+                <a href="assets/img/exhibition/School/logo.png" title="校徽" data-gallery="portfolio-gallery-school" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
+              <img src="assets/img/exhibition/Team/RS/logo/RS-Logo1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>RSのlogo1</h4>
+                <!--<p></p>-->
+                <a href="assets/img/exhibition/Team/RS/logo/RS-Logo1.jpg" title="RSのlogo1" data-gallery="portfolio-gallery-team" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
+              <img src="assets/img/exhibition/Team/RS/logo/RS-Logo2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>RSのlogo2</h4>
+                <!--<p></p>-->
+                <a href="assets/img/exhibition/Team/RS/logo/RS-Logo2.jpg" title="RSのlogo2" data-gallery="portfolio-gallery-team" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
+              <img src="assets/img/exhibition/Team/RS/logo/RS-Logo3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>RSのlogo3</h4>
+                <!--<p></p>-->
+                <a href="assets/img/exhibition/Team/RS/logo/RS-Logo3.jpg" title="RSのlogo3" data-gallery="portfolio-gallery-team" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
+              <img src="assets/img/exhibition/Team/Tang/logo/tang.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>唐·国旗</h4>
+                <!--<p></p>-->
+                <a href="assets/img/exhibition/Team/Tang/logo/tang.jpg" title="唐·国旗" data-gallery="portfolio-gallery-team" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!---
+  
+    <section id="pricing" class="pricing section">
+
+   
+      <div class="container section-title" data-aos="fade-up">
+        <span>Pricing</span>
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row g-4 g-lg-0">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Free Plan</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 featured" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item">
+              <h3>Business Plan</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Developer Plan</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>-->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>朝廷</span>
+        <h2>创始人</h2>
+        <p>皇帝与左右丞相</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>唐人一号</h4>
+                <span>社长</span>
+                <p>
+                  没什么好介绍的
+                </p>
+                <div class="social">
+                  <!--预留-->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>nFr3axp1</h4>
+                <span>社团的皇帝</span>
+                <p>
+                  真正的社长、副社长、宣传长、策划长、举办长、网页开发者
+                </p>
+                <div class="social">
+                  <a href="./Other/QRcode/qq.html" target="_blank"><i class="bi bi-tencent-qq"></i></a>
+                  <a href="https://x.com/nFr3axp1" target="_blank"><i class="bi bi-twitter-x"></i></a>            
+                  <a href="./Other/QRcode/wechat.html" target="_blank"><i class="fab fa-weixin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>唐人二号</h4>
+                <span>副社长</span>
+                <p>
+                  没什么好介绍的
+                </p>
+                <div class="social">
+                  <!--预留-->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>上船！</span>
+        <h2>📞联系我们📞</h2>
+        <p>🤵无数种方式让你找到我们🤵‍♀️</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-microsoft-teams"></i>
+              <h3>联系创始人</h3>
+              <a href="#team">点击跳转</a>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone-fill"></i>
+              <h3>电话</h3>
+              <p>+86 18335126202</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope-fill"></i>
+              <h3>邮箱</h3>
+              <p>3520645758@qq.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+              <div class="footer-about">
+                  <a href="index.html" class="logo sitename">模拟政治协商社团</a>
+                  <div class="footer-contact pt-3">
+                      <p>Produced by Heaven-Studio</p>
+                      <p>nFra3xp1</p>
+                      <p class="mt-3"><strong>电话:</strong> <span>+86 18335126202</span></p>
+                      <p><strong>Email:</strong> <span>3520645758@qq.com</span></p>
+                  </div>
+                  <div class="social-links d-flex mt-4">
+                      <a href="https://x.com/nFr3axp1" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                      <a href="https://t.me/+vxE4EpgB-IMyZThl" target="_blank"><i class="bi bi-telegram"></i></a>
+                      <a href="https://www.facebook.com/profile.php?id=61555907681366" target="_blank"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.instagram.com/tianyeorg_?igsh=d3Ywb2JoM2tyazFj" target="_blank"><i class="bi bi-instagram"></i></a>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6" style="margin-left: auto;"> <!-- 使用 margin-left: auto; -->
+              <div class="footer-about">
+                  <img src="assets/img/End-bg.png" class="img-fluid" alt="">
+              </div>
+          </div>
+      </div>
+    </div>
+  
+  
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Revival-Society&Heaven-Studio</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Produced by <a href="#hero">Heaven-Studio</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!--其他js-->
+  <script src="assets/js/music.js"></script>
+  <script src="assets/js/ClickEffects.js"></script>、
+  <script src="assets/js/DraggedEffects.js"></script>
+  <script src="assets/js/Snow.js"></script>
+</body>
+
+</html>
